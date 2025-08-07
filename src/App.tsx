@@ -6,7 +6,7 @@ import { HitGrid } from './components/HitGrid'
 
 const App: React.FC = () => {
   const { phase, elapsed, startGame, resetGame, round, gameStatus } = useGame()
-
+  console.log(gameStatus)
   return (
     <div className="w-full h-screen overflow-hidden text-center relative">
       <VideoBackground />

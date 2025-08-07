@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tap-attack/', // VERY IMPORTANT for gh-pages
+  base: '/dance-attack/', // VERY IMPORTANT for gh-pages
 })
