@@ -152,13 +152,13 @@ export const HitGrid: React.FC = () => {
                             {showGreen && (
                                 <>
                                     <div className="absolute inset-0 bg-green-400/40 animate-fade-out rounded-none" />
-                                    <svg width="48" height="48" className="z-10">
+                                    <svg width="48" height="48" className="z-10 animate-fade-out">
                                         <g transform="rotate(-90 24 24)">
                                             <circle
                                                 cx="24"
                                                 cy="24"
                                                 r={radius}
-                                                fill="rgb(74 222 128)"
+                                                fill="rgb(74 222 128)" // Tailwind's green-400
                                                 stroke="none"
                                                 strokeWidth="4"
                                             />
@@ -167,10 +167,9 @@ export const HitGrid: React.FC = () => {
                                 </>
                             )}
 
-                            {/* Yellow ring + fade yellow bg */}
                             {showYellow && (
                                 <>
-                                    <div className="absolute inset-0 bg-yellow-400/10 transition-opacity duration-200" />
+                                    <div className="absolute inset-0 bg-yellow-400/10 animate-fade-in rounded-none" />
                                     <svg width="48" height="48" className="z-10">
                                         <g transform="rotate(-90 24 24)">
                                             <circle
@@ -199,6 +198,7 @@ export const HitGrid: React.FC = () => {
                                     </svg>
                                 </>
                             )}
+
                         </div>
                     )
                 })

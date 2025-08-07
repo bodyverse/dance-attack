@@ -8,10 +8,6 @@
     "events": [
         {
             "type": "attack",
-            "start": 4
-        },
-        {
-            "type": "defend",
             "start": 15
         },
         {
