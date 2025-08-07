@@ -1,0 +1,46 @@
+{
+    "gameDuration": 95,
+    "prepareDuration": 2,
+    "eventDuration": 8,
+    "beatPerSecond": 1.2,
+    "yellowPulseDuration": 0.7,
+    "greenPulseDuration": 0.3,
+    "events": [
+        {
+            "type": "attack",
+            "start": 4
+        },
+        {
+            "type": "defend",
+            "start": 15
+        },
+        {
+            "type": "defend",
+            "start": 25
+        },
+        {
+            "type": "attack",
+            "start": 35
+        },
+        {
+            "type": "defend",
+            "start": 45
+        },
+        {
+            "type": "attack",
+            "start": 55
+        },
+        {
+            "type": "defend",
+            "start": 65
+        },
+        {
+            "type": "attack",
+            "start": 70
+        },
+        {
+            "type": "defend",
+            "start": 80
+        }
+    ]
+}

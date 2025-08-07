@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  @apply text-white bg-gray-900 font-sans;
+}
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -74,4 +78,27 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+@keyframes pulse-beat {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+}
+
+.animate-pulse-beat {
+  animation-name: pulse-beat;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
